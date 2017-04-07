@@ -1,0 +1,10 @@
+#!/bin/bash
+cat <<EOF
+
+  # After install, set password
+  sudo -u postgresql psql postgres
+
+  # Then in postgresql prompt:
+  \password postgres
+
+EOF
